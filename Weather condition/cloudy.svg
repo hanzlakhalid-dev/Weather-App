@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     width="128"
+     height="128"
+     fill="none">
+
+  <defs>
+
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D7E2EC"/>
+    </linearGradient>
+
+    <linearGradient id="cloudShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C8D4DF" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#AEBECC" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <filter id="shadow"
+            x="-30%"
+            y="-30%"
+            width="160%"
+            height="170%">
+      <feDropShadow dx="0"
+                    dy="2"
+                    stdDeviation="2"
+                    flood-color="#9AA5B1"
+                    flood-opacity="0.25"/>
+    </filter>
+
+  </defs>
+
+  <!-- Back Cloud -->
+  <g filter="url(#shadow)">
+    <path
+      d="M20 36
+         C20 29 26 24 33 24
+         C35 18 41 15 47 15
+         C55 15 61 21 61 29
+         C65 30 68 34 68 39
+         C68 45 63 50 57 50
+         H22
+         C15 50 10 45 10 39
+         C10 34 14 31 20 31
+         Z"
+      transform="translate(-4,-6)"
+      fill="#EEF3F8"/>
+  </g>
+
+  <!-- Front Cloud -->
+  <g filter="url(#shadow)">
+
+    <path
+      d="M18 42
+         C18 35 24 30 31 30
+         C33 24 39 20 45 20
+         C54 20 60 26 60 34
+         C64 35 67 39 67 44
+         C67 50 62 55 56 55
+         H20
+         C13 55 8 50 8 44
+         C8 39 12 35 18 35
+         Z"
+      fill="url(#cloudGradient)"
+      stroke="#BCC8D4"
+      stroke-width="1.5"/>
+
+    <!-- Bottom shading -->
+    <path
+      d="M20 49
+         H56
+         C60 49 63 47 64 44
+         C64 49 60 55 56 55
+         H20
+         C14 55 10 51 10 46
+         C11 48 15 49 20 49Z"
+      fill="url(#cloudShadow)"
+      opacity="0.8"/>
+
+    <!-- Highlight -->
+    <path
+      d="M24 34
+         C28 31 35 30 41 32"
+      stroke="#FFFFFF"
+      stroke-width="2.2"
+      stroke-linecap="round"
+      opacity="0.65"/>
+
+  </g>
+
+</svg>

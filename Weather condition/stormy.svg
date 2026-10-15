@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     width="128"
+     height="128"
+     fill="none">
+
+  <defs>
+
+    <!-- Cloud -->
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+
+    <!-- Lightning -->
+    <linearGradient id="boltGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE66D"/>
+      <stop offset="100%" stop-color="#F4B400"/>
+    </linearGradient>
+
+    <!-- Rain -->
+    <linearGradient id="rainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC"/>
+      <stop offset="100%" stop-color="#2196F3"/>
+    </linearGradient>
+
+    <filter id="shadow"
+            x="-30%"
+            y="-30%"
+            width="170%"
+            height="180%">
+      <feDropShadow dx="0"
+                    dy="2"
+                    stdDeviation="2"
+                    flood-color="#64748B"
+                    flood-opacity="0.25"/>
+    </filter>
+
+  </defs>
+
+  <!-- Back Cloud -->
+  <path
+    d="M18 30
+       C18 24 23 20 29 20
+       C31 15 36 12 42 12
+       C50 12 56 18 56 26
+       C61 27 64 31 64 36
+       C64 42 59 46 53 46
+       H20
+       C13 46 8 41 8 35
+       C8 31 12 28 18 28Z"
+    fill="#E2E8F0"
+    opacity="0.75"/>
+
+  <!-- Main Cloud -->
+  <g filter="url(#shadow)">
+    <path
+      d="M18 34
+         C18 27 24 22 31 22
+         C33 16 39 13 45 13
+         C54 13 60 19 60 28
+         C64 29 67 33 67 38
+         C67 44 62 49 56 49
+         H20
+         C13 49 8 44 8 38
+         C8 33 12 30 18 30Z"
+      transform="translate(-3,-2)"
+      fill="url(#cloudGradient)"
+      stroke="#B8C4D0"
+      stroke-width="1.5"/>
+  </g>
+
+  <!-- Cloud Highlight -->
+  <path
+      d="M23 24
+         C28 21 35 21 40 23"
+      stroke="#FFFFFF"
+      stroke-width="2"
+      stroke-linecap="round"
+      opacity=".65"/>
+
+  <!-- Rain -->
+  <g fill="url(#rainGradient)">
+
+    <path d="M19 51
+             C19 48 21 46 22 43
+             C23 46 25 48 25 51
+             C25 53 23.7 55 22 55
+             C20.3 55 19 53 19 51Z"/>
+
+    <path d="M43 51
+             C43 48 45 46 46 43
+             C47 46 49 48 49 51
+             C49 53 47.7 55 46 55
+             C44.3 55 43 53 43 51Z"/>
+
+  </g>
+
+  <!-- Lightning -->
+  <path
+    d="M34 33
+       L27 45
+       H33
+       L30 58
+       L43 41
+       H36
+       L40 33
+       Z"
+    fill="url(#boltGradient)"
+    stroke="#D97706"
+    stroke-width="1"
+    stroke-linejoin="round"/>
+
+</svg>

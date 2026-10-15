@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     width="128"
+     height="128"
+     fill="none">
+
+  <defs>
+
+    <!-- Cloud Gradient -->
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#DCE6F0"/>
+    </linearGradient>
+
+    <!-- Snow Gradient -->
+    <linearGradient id="snowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#CFEFFF"/>
+    </linearGradient>
+
+    <!-- Shadow -->
+    <filter id="shadow"
+            x="-30%"
+            y="-30%"
+            width="170%"
+            height="180%">
+      <feDropShadow dx="0"
+                    dy="2"
+                    stdDeviation="2"
+                    flood-color="#64748B"
+                    flood-opacity="0.22"/>
+    </filter>
+
+  </defs>
+
+  <!-- Back Cloud -->
+  <path
+      d="M18 30
+         C18 24 23 20 29 20
+         C31 15 36 12 42 12
+         C50 12 56 18 56 26
+         C61 27 64 31 64 36
+         C64 42 59 46 53 46
+         H20
+         C13 46 8 41 8 35
+         C8 31 12 28 18 28Z"
+      fill="#EDF3F8"
+      opacity="0.75"/>
+
+  <!-- Front Cloud -->
+  <g filter="url(#shadow)">
+    <path
+      d="M18 34
+         C18 27 24 22 31 22
+         C33 16 39 13 45 13
+         C54 13 60 19 60 28
+         C64 29 67 33 67 38
+         C67 44 62 49 56 49
+         H20
+         C13 49 8 44 8 38
+         C8 33 12 30 18 30Z"
+      transform="translate(-3,-2)"
+      fill="url(#cloudGradient)"
+      stroke="#BCC8D4"
+      stroke-width="1.5"/>
+  </g>
+
+  <!-- Cloud Highlight -->
+  <path
+      d="M23 24
+         C28 21 35 21 40 23"
+      stroke="#FFFFFF"
+      stroke-width="2"
+      stroke-linecap="round"
+      opacity=".65"/>
+
+  <!-- Snowflakes -->
+  <g stroke="url(#snowGradient)"
+     stroke-width="1.8"
+     stroke-linecap="round">
+
+    <!-- Snowflake 1 -->
+    <g transform="translate(22 51)">
+      <line x1="0" y1="-3" x2="0" y2="3"/>
+      <line x1="-3" y1="0" x2="3" y2="0"/>
+      <line x1="-2.2" y1="-2.2" x2="2.2" y2="2.2"/>
+      <line x1="-2.2" y1="2.2" x2="2.2" y2="-2.2"/>
+    </g>
+
+    <!-- Snowflake 2 -->
+    <g transform="translate(34 55)">
+      <line x1="0" y1="-3" x2="0" y2="3"/>
+      <line x1="-3" y1="0" x2="3" y2="0"/>
+      <line x1="-2.2" y1="-2.2" x2="2.2" y2="2.2"/>
+      <line x1="-2.2" y1="2.2" x2="2.2" y2="-2.2"/>
+    </g>
+
+    <!-- Snowflake 3 -->
+    <g transform="translate(46 51)">
+      <line x1="0" y1="-3" x2="0" y2="3"/>
+      <line x1="-3" y1="0" x2="3" y2="0"/>
+      <line x1="-2.2" y1="-2.2" x2="2.2" y2="2.2"/>
+      <line x1="-2.2" y1="2.2" x2="2.2" y2="-2.2"/>
+    </g>
+
+  </g>
+
+</svg>

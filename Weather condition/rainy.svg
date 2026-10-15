@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     width="128"
+     height="128"
+     fill="none">
+
+  <defs>
+
+    <!-- Cloud -->
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D8E3EC"/>
+    </linearGradient>
+
+    <!-- Rain -->
+    <linearGradient id="rainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC"/>
+      <stop offset="100%" stop-color="#2196F3"/>
+    </linearGradient>
+
+    <filter id="shadow"
+            x="-30%" y="-30%"
+            width="160%" height="170%">
+      <feDropShadow dx="0"
+                    dy="2"
+                    stdDeviation="2"
+                    flood-color="#94A3B8"
+                    flood-opacity="0.25"/>
+    </filter>
+
+  </defs>
+
+  <!-- Back Cloud -->
+  <path
+      d="M18 30
+         C18 24 23 20 29 20
+         C31 15 36 12 42 12
+         C50 12 56 18 56 26
+         C61 27 64 31 64 36
+         C64 42 59 46 53 46
+         H20
+         C13 46 8 41 8 35
+         C8 31 12 28 18 28Z"
+      fill="#EEF3F8"
+      opacity="0.8"/>
+
+  <!-- Front Cloud -->
+  <g filter="url(#shadow)">
+    <path
+      d="M18 34
+         C18 27 24 22 31 22
+         C33 16 39 13 45 13
+         C54 13 60 19 60 28
+         C64 29 67 33 67 38
+         C67 44 62 49 56 49
+         H20
+         C13 49 8 44 8 38
+         C8 33 12 30 18 30Z"
+
+      transform="translate(-3,-2)"
+      fill="url(#cloudGradient)"
+      stroke="#BCC8D4"
+      stroke-width="1.5"/>
+  </g>
+
+  <!-- Highlight -->
+  <path
+      d="M23 24
+         C28 21 35 21 40 23"
+      stroke="#FFFFFF"
+      stroke-width="2"
+      stroke-linecap="round"
+      opacity=".65"/>
+
+  <!-- Rain Drops -->
+
+  <g fill="url(#rainGradient)">
+
+    <path d="M20 49
+             C20 46 22 44 23 41
+             C24 44 26 46 26 49
+             C26 51 24.7 53 23 53
+             C21.3 53 20 51 20 49Z"/>
+
+    <path d="M31 52
+             C31 49 33 47 34 44
+             C35 47 37 49 37 52
+             C37 54 35.7 56 34 56
+             C32.3 56 31 54 31 52Z"/>
+
+    <path d="M42 49
+             C42 46 44 44 45 41
+             C46 44 48 46 48 49
+             C48 51 46.7 53 45 53
+             C43.3 53 42 51 42 49Z"/>
+
+  </g>
+
+</svg>

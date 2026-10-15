@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="Weather condition/party-cloudy.svg" type="image/x-icon">
+    <Script src="theme-init.js"></Script>
+</head>
+
+<body>
+    <header class="headermain">
+        <span class="logospan">
+            <img src="Weather condition/party-cloudy.svg" alt="" class="logoimage" >
+        </span>
+        <h1 class="main-heading">Weather <span class="app-color">App</span></h1>
+        <div class="inputdiv">
+            <span class="searchspan SearchBtn">
+                <img src="Icons/SearchIcon.svg" alt="" class="searchIcon " data-light="IconsLightTheme/SearchIcon.svg"
+                    data-dark="Icons/SearchIcon.svg">
+            </span>
+            <input placeholder="Search city..." type="text" class="SearchBar">
+            <button class="Searchbtn SearchBtn">Search</button>
+        </div>
+        <button class="theme-toogle"><img class="theme-toogle-img" src="Icons/sun.svg" alt=""
+                data-light="IconsLightTheme/sun.svg" data-dark="Icons/sun.svg"></button>
+    </header>
+    <div class="searchBar-mobile">
+        <input placeholder="Search city..." type="text" class="SearchBar">
+            <button class="Searchbtn SearchBtn">Search</button></div>
+    <div class="MainContent display-none">
+        <div class="todayinfo">
+            <span class="day"></span>
+            <span class="date"></span>·
+            <span class="time"></span>
+        </div>
+        <div class="weather-info">
+            <div class="temperature">
+                <div class="temp"><span class="unit"></span></div>
+                <div class="feelslike feelslike-pc">
+                    <span class="feelslike-icon"><img src="Icons/thermometer.svg" data-dark="Icons/thermometer.svg"
+                        data-light="IconsLightTheme/thermometer.svg" alt=""></span>
+                    <span class="feelslike-value"></span>
+                </div>
+            </div>
+            <div class="weather-pic"><img src="" alt="" class="weather-expected-pic"></div>
+        </div>
+        <div class="feelslike-mobile">
+            <div class="feelslike">
+                    <span class="feelslike-icon"><img src="Icons/thermometer.svg" data-dark="Icons/thermometer.svg"
+                        data-light="IconsLightTheme/thermometer.svg" alt=""></span>
+                    <span></span>
+                </div>
+        </div>
+      <div class="location-info">
+        <span class="location-icon">
+            <img src="Icons/location.svg" alt="" class="location-svg" >
+        </span>
+        <h2 class="location-city"><span class="city"></span> <span class="country"></span></h2>
+      </div>
+      <div class="overall-info-feedback"></div>
+      <div class="more-info">
+<div class="card">
+    <div class="cards-img">
+        <img src="Icons/humidity.svg" alt="" class="card-svg">
+    </div>
+    <div class="card-content">
+        <p class="card-title">Humidity</p>
+        <p class="card-value humidity-value"></p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="cards-img">
+        <img src="Icons/wind.svg" alt="" class="card-svg">
+    </div>
+    <div class="card-content">
+        <p class="card-title">Wind Speed</p>
+        <p class="card-value wind-value"></p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="cards-img">
+        <img src="Icons/pressure.svg" alt="" class="card-svg">
+    </div>
+    <div class="card-content">
+        <p class="card-title">Pressure</p>
+        <p class="card-value pressure-value"></p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="cards-img">
+        <img src="Icons/visibility.svg" alt="" class="card-svg">
+    </div>
+    <div class="card-content">
+        <p class="card-title">Visibility</p>
+        <p class="card-value visibility-value"></p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="cards-img">
+        <img src="Icons/sunrise.svg" alt="" class="card-svg">
+    </div>
+    <div class="card-content">
+        <p class="card-title">Sunrise</p>
+        <p class="card-value sunrise-value"></p>
+    </div>
+</div>
+
+<div class="card">
+    <div class="cards-img">
+        <img src="Icons/sunset.svg" alt="" class="card-svg">
+    </div>
+    <div class="card-content">
+        <p class="card-title">Sunset</p>
+        <p class="card-value sunset-value"></p>
+    </div>
+</div>
+      </div>
+      <div class="last-updated">
+        <img src="Icons/clock.svg" alt="" class="clock-last-updated" data-dark="Icons/clock.svg" data-light="IconsLightTheme/clock.svg"> 
+        <p class="last-updated-text">Last Updated:</p>
+        <p class="last-updated-time"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

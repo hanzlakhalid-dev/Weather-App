@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     width="128"
+     height="128"
+     fill="none">
+
+  <defs>
+    <!-- Sun Gradient -->
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#FFF8B0"/>
+      <stop offset="60%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#F9A825"/>
+    </radialGradient>
+
+    <!-- Cloud Gradient -->
+    <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#D8E1EA"/>
+    </linearGradient>
+
+    <!-- Soft Shadow -->
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2"
+        flood-color="#9AA5B1" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Sun Rays -->
+  <g stroke="#F9A825"
+     stroke-width="2.4"
+     stroke-linecap="round">
+
+    <line x1="20" y1="6"  x2="20" y2="12"/>
+    <line x1="20" y1="28" x2="20" y2="34"/>
+
+    <line x1="6" y1="20" x2="12" y2="20"/>
+    <line x1="28" y1="20" x2="34" y2="20"/>
+
+    <line x1="10.5" y1="10.5" x2="14.5" y2="14.5"/>
+    <line x1="25.5" y1="25.5" x2="29.5" y2="29.5"/>
+
+    <line x1="10.5" y1="29.5" x2="14.5" y2="25.5"/>
+    <line x1="25.5" y1="14.5" x2="29.5" y2="10.5"/>
+  </g>
+
+  <!-- Sun -->
+  <circle
+      cx="20"
+      cy="20"
+      r="8.5"
+      fill="url(#sunGradient)"
+      stroke="#F9A825"
+      stroke-width="1.8"/>
+
+  <!-- Cloud -->
+  <g filter="url(#shadow)">
+    <path
+      d="M22 42
+         C22 36 27 32 33 32
+         C35 27 40 24 45 24
+         C52 24 57 29 57 36
+         C61 37 64 41 64 45
+         C64 50 60 54 55 54
+         H24
+         C18 54 14 50 14 45
+         C14 41 17 38 22 38
+         Z"
+      fill="url(#cloudGradient)"
+      transform="translate(-6,-4)"/>
+
+    <path
+      d="M22 42
+         C22 36 27 32 33 32
+         C35 27 40 24 45 24
+         C52 24 57 29 57 36
+         C61 37 64 41 64 45
+         C64 50 60 54 55 54
+         H24
+         C18 54 14 50 14 45
+         C14 41 17 38 22 38
+         Z"
+      fill="url(#cloudGradient)"
+      stroke="#BFC9D4"
+      stroke-width="1.5"/>
+  </g>
+
+  <!-- Cloud Highlight -->
+  <path
+    d="M24 36
+       C28 33 33 33 37 35"
+    stroke="#FFFFFF"
+    stroke-width="2"
+    stroke-linecap="round"
+    opacity="0.6"/>
+
+</svg>
